@@ -3,31 +3,7 @@
 # Author: Noberto Maciel <nobertomaciel@hotmail.com>
 # License: BSD 3 clause
 
-#### import to use on colaboratory
-import time
-import warnings
-from itertools import cycle, islice
-import matplotlib.pyplot as plt
-import numpy as np
-from sklearn import cluster, datasets, mixture, metrics
-from sklearn.neighbors import kneighbors_graph
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import HDBSCAN
-from sklearn.datasets import load_digits
-from sklearn.preprocessing import LabelEncoder
-import functools
-from numbers import Integral
-from scipy.sparse import issparse
-from sklearn.utils import _safe_indexing, check_random_state, check_X_y
-from sklearn.utils._param_validation import (
-    Interval,
-    StrOptions,
-    validate_params,
-)
-from sklearn.metrics.pairwise import _VALID_METRICS, pairwise_distances, pairwise_distances_chunked
-#### import to use on colaboratory
 
-#### import to use on sklearn repository
 # import functools
 # from numbers import Integral
 
@@ -42,7 +18,7 @@ from sklearn.metrics.pairwise import _VALID_METRICS, pairwise_distances, pairwis
 #     validate_params,
 # )
 # from ..pairwise import _VALID_METRICS, pairwise_distances, pairwise_distances_chunked
-#### import to use on sklearn repository
+
 
 def check_number_of_labels(n_labels, n_samples):
     """Check that number of labels are valid.
@@ -69,16 +45,16 @@ def check_number_of_labels(n_labels, n_samples):
     prefer_skip_nested_validation=True,
 )
 def dunn_index(X, labels):
-    """Compute the Davies-Bouldin score.
+    """Compute the Dunn index.
 
-    The score is defined as the average similarity measure of each cluster with
+    The index is defined as the average similarity measure of each cluster with
     its most similar cluster, where similarity is the ratio of within-cluster
     distances to between-cluster distances. Thus, clusters which are farther
-    apart and less dispersed will result in a better score.
+    apart and less dispersed will result in a better index.
 
-    The minimum score is zero, with lower values indicating better clustering.
+    The minimum index is zero, with lower values indicating better clustering.
 
-    Read more in the :ref:`User Guide <davies-bouldin_index>`.
+    Read more in the :ref:`User Guide <dunn_index>`.
 
     .. versionadded:: 0.20
 
@@ -93,16 +69,15 @@ def dunn_index(X, labels):
 
     Returns
     -------
-    score: float
-        The resulting Davies-Bouldin score.
+    index: float
+        The resulting Dunn Index.
 
     References
     ----------
-    .. [1] Davies, David L.; Bouldin, Donald W. (1979).
-       `"A Cluster Separation Measure"
-       <https://ieeexplore.ieee.org/document/4766909>`__.
-       IEEE Transactions on Pattern Analysis and Machine Intelligence.
-       PAMI-1 (2): 224-227
+    .. [1] J. C. Dunn (1973).
+       "A Fuzzy Relative of the ISODATA Process and Its Use in Detecting Compact Well-Separated Clusters"
+        Journal of Cybernetics, 3:3, 32-57
+        DOI: 10.1080/01969727308546046
     """
     X, labels = check_X_y(X, labels)
     le = LabelEncoder()
@@ -117,7 +92,7 @@ def dunn_index(X, labels):
         cluster_k = _safe_indexing(X, labels == k)
         centroid = cluster_k.mean(axis=0)
         centroids[k] = centroid
-        intra_dists[k] = np.average(pairwise_distances(cluster_k, [centroid]))
+        intra_dists[k] = max(pairwise_distances(cluster_k, [centroid]))
 
     centroid_distances = pairwise_distances(centroids)
 
@@ -126,5 +101,6 @@ def dunn_index(X, labels):
 
     centroid_distances[centroid_distances == 0] = np.inf
     combined_intra_dists = intra_dists[:, None] + intra_dists
-    scores = np.max(combined_intra_dists / centroid_distances, axis=1)
+    #scores = np.max(combined_intra_dists / centroid_distances, axis=1)
+    scores = np.min(centroid_distances / combined_intra_dists, axis=1)
     return np.mean(scores)
