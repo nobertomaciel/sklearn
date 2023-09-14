@@ -43,6 +43,10 @@ def xie_beni_index(X, labels):
         A validity measure for fuzzy clustering. 
         IEEE Transactions on Pattern Analysis & Machine Intelligence, 
         v. 13, n. 08, p. 841-847, 1991.
+       [2] LATHIEF, Muttabik Fathul; SOESANTI, Indah; PERMANASARI, Adhistya Erna. 
+        Combination of Fuzzy C-Means, Xie-Beni Index, and Backpropagation Neural Network for Better Forecasting Result. 
+        Science and Technology Publications: Setubal, Portugal, 
+        p. 72-77, 2020.
     """
     def check_number_of_labels(n_labels, n_samples):
         """Check that number of labels are valid.
