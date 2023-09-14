@@ -1,7 +1,7 @@
 # sklearn complementary clustering measures
 
 ### Xie Beni Index
-"""Compute the Xie Beni Index.
+**Compute the Xie Beni Index.**
 
     Xie and Beni introduced Xie-Beni (XB) index method in 1991. 
     XB index is focus on separation and com- pactness. 
@@ -35,7 +35,6 @@
         A validity measure for fuzzy clustering. 
         IEEE Transactions on Pattern Analysis & Machine Intelligence, 
         v. 13, n. 08, p. 841-847, 1991.
-    """
 
 ### Dunn Index
 
