@@ -12,7 +12,7 @@ def xie_beni_index(X, labels):
     """Compute the Xie Beni Index.
 
     Xie and Beni introduced Xie-Beni (XB) index method in 1991. 
-    XB index is focus on separation and com- pactness. 
+    XB index is focus on separation and compactness. 
     Separation is a measure of the distance between one cluster and 
     another cluster and compactness is a measure of proximity between data 
     points in a cluster (Lathief 2020).
