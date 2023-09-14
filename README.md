@@ -40,7 +40,9 @@ https://github.com/nobertomaciel/sklearn/blob/main/xie_beni.py
 ## SSE
 **Compute the Sum of Squared Error.**
 https://github.com/nobertomaciel/sklearn/blob/main/sse.py
-    The Sum of Squared Error in cluster analisys get all distances between an element and the center of cluster.
+
+    The Sum of Squared Error in cluster analisys get all distances between 
+    an element and the center of cluster.
 
     The minimum score is zero (when elements are equal to center of cluster), 
     with lower values indicating better clustering.
