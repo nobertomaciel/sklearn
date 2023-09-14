@@ -75,8 +75,8 @@ https://github.com/nobertomaciel/sklearn/blob/main/sse.py
 ## Dunn Index
 
 ###(WARNING: routine still in development - being adjusted)
-<br>Use: <a href=https://github.com/jqmviegas/jqm_cvi>jqm_cvi</a> library instead
+<br>Use: [jqm_cvi](https://github.com/jqmviegas/jqm_cvi) library instead
 <br>
 ###Code based in scikit-learn Library, source on:
 <br>
-[https://github.com/jqmviegas/jqm_cvi](https://github.com/scikit-learn/scikit-learn/blob/7f9bad99d/sklearn/metrics/cluster/_unsupervised.py#L360)
+[https://github.com/jqmviegas/jqm_cvi](https://github.com/scikit-learn/scikit-learn/blob/7f9bad99d/sklearn/metrics/cluster/_unsupervised.py#L360](https://github.com/scikit-learn/scikit-learn/blob/7f9bad99d/sklearn/metrics/cluster/_unsupervised.py#L360)
