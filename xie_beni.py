@@ -1,3 +1,6 @@
+# Author: Noberto Maciel <nobertomaciel@hotmail.com>
+# License: BSD 3 clause
+
 @validate_params(
     {
         "X": ["array-like"],
