@@ -2,6 +2,7 @@
 
 ## Xie Beni Index
 **Compute the Xie Beni Index.**
+https://github.com/nobertomaciel/sklearn/blob/main/xie_beni.py
 
     Xie and Beni introduced Xie-Beni (XB) index method in 1991. 
     XB index is focus on separation and com- pactness. 
