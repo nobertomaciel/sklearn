@@ -37,6 +37,35 @@ https://github.com/nobertomaciel/sklearn/blob/main/xie_beni.py
         IEEE Transactions on Pattern Analysis & Machine Intelligence, 
         v. 13, n. 08, p. 841-847, 1991.
 
+## SSE
+**Compute the Sum of Squared Error.**
+https://github.com/nobertomaciel/sklearn/blob/main/sse.py
+    The Sum of Squared Error in cluster analisys get all distances between an element and the center of cluster.
+
+    The minimum score is zero (when elements are equal to center of cluster), with lower values indicating better clustering.
+
+    Read more in the :ref:`User Guide <sse>`.
+
+    .. versionadded:: 0.10
+
+    Parameters
+    ----------
+    X : array-like of shape (n_samples, n_features)
+        A list of ``n_features``-dimensional data points. Each row corresponds
+        to a single data point.
+
+    labels : array-like of shape (n_samples,)
+        Predicted labels for each sample.
+
+    Returns
+    -------
+    score: float
+        The resulting SSE value.
+
+    References
+    ----------
+    .. [1] 
+
 ## Dunn Index
 
 (WARNING: routine still in development - being adjusted)
