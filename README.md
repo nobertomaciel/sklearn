@@ -42,7 +42,8 @@ https://github.com/nobertomaciel/sklearn/blob/main/xie_beni.py
 https://github.com/nobertomaciel/sklearn/blob/main/sse.py
     The Sum of Squared Error in cluster analisys get all distances between an element and the center of cluster.
 
-    The minimum score is zero (when elements are equal to center of cluster), with lower values indicating better clustering.
+    The minimum score is zero (when elements are equal to center of cluster), 
+    with lower values indicating better clustering.
 
     Read more in the :ref:`User Guide <sse>`.
 
