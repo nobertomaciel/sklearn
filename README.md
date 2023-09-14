@@ -12,7 +12,9 @@ https://github.com/nobertomaciel/sklearn/blob/main/xie_beni.py
 
     The minimum score is zero, with lower values indicating better clustering.
 
-    Read more in the :ref:`User Guide` <a href=https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics><sklearn></a>.
+    Read more in the :ref:`User Guide <sklearn>`:
+    https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
+    
 
     .. versionadded:: 0.10
 
@@ -47,7 +49,8 @@ https://github.com/nobertomaciel/sklearn/blob/main/sse.py
     The minimum score is zero (when elements are equal to center of cluster), 
     with lower values indicating better clustering.
 
-    Read more in the :ref:`User Guide <a href=https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics><sklearn></a>`.
+    Read more in the :ref:`User Guide <sklearn>`:
+    https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
 
     .. versionadded:: 0.10
 
