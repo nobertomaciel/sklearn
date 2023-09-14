@@ -76,7 +76,9 @@ https://github.com/nobertomaciel/sklearn/blob/main/sse.py
 
 ###(WARNING: routine still in development - being adjusted)
 <br>Use: [jqm_cvi](https://github.com/jqmviegas/jqm_cvi) library instead
-<br>
-###Code based in scikit-learn Library, source on:
+
+<p>
+## All code based in scikit-learn Library, source on:
 <br>
 [..sklearn/metrics/cluster/_unsupervised.py#L360](https://github.com/scikit-learn/scikit-learn/blob/7f9bad99d/sklearn/metrics/cluster/_unsupervised.py#L360)
+</p>
