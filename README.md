@@ -1,6 +1,6 @@
 # sklearn complementary clustering measures
 
-### Xie Beni Index
+## Xie Beni Index
 **Compute the Xie Beni Index.**
 
     Xie and Beni introduced Xie-Beni (XB) index method in 1991. 
@@ -36,7 +36,7 @@
         IEEE Transactions on Pattern Analysis & Machine Intelligence, 
         v. 13, n. 08, p. 841-847, 1991.
 
-### Dunn Index
+## Dunn Index
 
 (WARNING: routine still in development - being adjusted)
 <br>
